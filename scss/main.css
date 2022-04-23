@@ -1,0 +1,350 @@
+/* text color */
+/* small font */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+body {
+  /*   background-image: url('../images/pattern-hills.svg');
+    background-size: cover; */
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e1e2a), to(#241e2c));
+  background: linear-gradient(#1e1e2a, #241e2c);
+}
+
+.page {
+  background-image: url("../images/bg-stars.svg"), url("../images/pattern-hills.svg");
+  background-size: contain ,100% 160px;
+  background-position: top,bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .page {
+    background-size: contain,100% 140px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .page {
+    background-size: contain,100% 120px;
+  }
+}
+
+.page .count-page .launchingText {
+  color: #fffeff;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+}
+
+.page .count-page .count-days {
+  padding: 0 20% 0 20%;
+  /*  @media only screen and (max-width: 992px) {
+        padding: 0 5% 0 5%;
+      } */
+  /*   @media only screen and (max-width: 768px) {
+        width: 500px;
+        
+      }
+      
+    @media only screen and (max-width: 576px) {
+      width: 400px;
+     
+    } */
+}
+
+@media only screen and (max-width: 992px) {
+  .page .count-page .count-days {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .page .count-page .count-days {
+    padding: 0 12% 0 12%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .page .count-page .count-days {
+    padding: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .page .count-page .count-days {
+    padding: 0 0% 0 0%;
+  }
+}
+
+.page .count-page .count-days .count-days-top {
+  /*  height: 150px;
+         @media only screen and (max-width: 576px) {
+          height: 110px;
+          
+         } */
+}
+
+.page .count-page .count-days .count-days-top .count-days-top-cont {
+  position: relative;
+  width: 130px;
+  height: 60px;
+  background: #2c2c44;
+  top: -4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .page .count-page .count-days .count-days-top .count-days-top-cont {
+    width: 100px;
+    height: 40px;
+    top: -5;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .page .count-page .count-days .count-days-top .count-days-top-cont {
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .page .count-page .count-days .count-days-top .count-days-top-cont {
+    width: 70px;
+    height: 30px;
+  }
+}
+
+.page .count-page .count-days .count-days-top .count-days-top-cont .leftBottom, .page .count-page .count-days .count-days-top .count-days-top-cont .rightBottom {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #181b22;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.page .count-page .count-days .count-days-top .count-days-top-cont .leftBottom {
+  top: 55px;
+  left: -5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .page .count-page .count-days .count-days-top .count-days-top-cont .leftBottom {
+    top: 35px;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .page .count-page .count-days .count-days-top .count-days-top-cont .leftBottom {
+    top: 25px;
+  }
+}
+
+.page .count-page .count-days .count-days-top .count-days-top-cont .rightBottom {
+  top: 55px;
+  right: -5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .page .count-page .count-days .count-days-top .count-days-top-cont .rightBottom {
+    top: 35px;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .page .count-page .count-days .count-days-top .count-days-top-cont .rightBottom {
+    top: 25px;
+  }
+}
+
+.page .count-page .count-days .count-days-top .count-days-top-cont hr {
+  position: absolute;
+  width: 100%;
+  border: 0.8px solid #1a1c29;
+  /* color: $cBoxBorderColor; */
+  z-index: 12;
+  top: 75%;
+}
+
+@media only screen and (max-width: 768px) {
+  .page .count-page .count-days .count-days-top .count-days-top-cont hr {
+    top: 60%;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .page .count-page .count-days .count-days-top .count-days-top-cont hr {
+    top: 50%;
+  }
+}
+
+.page .count-page .count-days .count-days-top h3 {
+  position: absolute;
+  z-index: 10;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d14f6b), to(#f75c86));
+  background: linear-gradient(#d14f6b, #f75c86);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@media only screen and (max-width: 476px) {
+  .page .count-page .count-days .count-days-top h3 {
+    font-size: 2rem;
+  }
+}
+
+.page .count-page .count-days .count-days-top .count-days-bottom-cont {
+  position: relative;
+  top: -1.8px;
+  width: 130px;
+  height: 60px;
+  background: #34364f;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .page .count-page .count-days .count-days-top .count-days-bottom-cont {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .page .count-page .count-days .count-days-top .count-days-bottom-cont {
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .page .count-page .count-days .count-days-top .count-days-bottom-cont {
+    width: 70px;
+    height: 30px;
+  }
+}
+
+.page .count-page .count-days .count-days-top .count-days-bottom-cont::after {
+  content: "";
+  position: relative;
+  top: 60%;
+  padding: 10px 65px 10px 65px;
+  background: #181b22;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 768px) {
+  .page .count-page .count-days .count-days-top .count-days-bottom-cont::after {
+    padding: 10px 50px 10px 50px;
+    top: 40%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .page .count-page .count-days .count-days-top .count-days-bottom-cont::after {
+    padding: 10px 40px 10px 40px;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .page .count-page .count-days .count-days-top .count-days-bottom-cont::after {
+    padding: 10px 35px 10px 35px;
+    top: 10%;
+  }
+}
+
+.page .count-page .text-container {
+  padding: 0 20% 0 20%;
+}
+
+@media only screen and (max-width: 992px) {
+  .page .count-page .text-container {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .page .count-page .text-container {
+    padding: 0 12% 0 12%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .page .count-page .text-container {
+    padding: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .page .count-page .text-container {
+    padding: 0 0% 0 0%;
+  }
+}
+
+.page .count-page .text-container .count-days-txt {
+  width: 130px;
+}
+
+@media only screen and (max-width: 576px) {
+  .page .count-page .text-container .count-days-txt {
+    width: 100px;
+  }
+}
+
+.page .count-page .text-container .count-days-txt p {
+  color: #8a8aa6;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .page .count-page .text-container .count-days-txt p {
+    /* letter-spacing: 0.1rem; */
+    font-size: 7px;
+  }
+}
+
+.page .count-page .icon-container {
+  width: 150px;
+  margin-top: 14%;
+}
+
+@media only screen and (max-width: 768px) {
+  .page .count-page .icon-container {
+    margin-top: 25%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .page .count-page .icon-container {
+    margin-top: 35%;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .page .count-page .icon-container {
+    margin-top: 45%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page .count-page .icon-container {
+    margin-top: 55%;
+  }
+}
+
+.page .count-page .icon-container .count-days-icon i {
+  color: #8a8aa6;
+}
+
+.page .count-page .icon-container .count-days-icon i:hover {
+  color: #f75c86;
+}
+/*# sourceMappingURL=main.css.map */

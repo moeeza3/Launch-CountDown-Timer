@@ -1,0 +1,273 @@
+$darkPurple: #1e1e2a;
+$lightPurple: #241e2c;
+$cBoxDarkPurple: #2c2c44;
+$cBoxLightPurple: #34364f;
+$cBoxBorderColor: #181b22;
+$cBoxTextDarkColor: #d14f6b;
+$cBoxTextLightColor: #f75c86;
+
+/* text color */
+$launchingtxt:#fffeff;
+$textContainerTxt: #8a8aa6;
+/* small font */
+$font-size-base:              1rem; 
+$font-size-sm:                $font-size-base *2;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Text', sans-serif;
+}
+body{
+  /*   background-image: url('../images/pattern-hills.svg');
+    background-size: cover; */
+    background: linear-gradient($darkPurple, $lightPurple);
+
+ 
+}
+.page{
+
+    background-image: url('../images/bg-stars.svg'),url('../images/pattern-hills.svg');
+    background-size: contain ,100% 160px;
+    background-position: top,bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    @media only screen and (max-width: 768px) {
+      background-size: contain,100% 140px;
+    }
+    @media only screen and (max-width: 576px) {
+      background-size: contain,100% 120px;
+    }
+.count-page{
+ 
+  .launchingText{
+    color: $launchingtxt;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+  }
+   .count-days{
+       padding: 0 20% 0 20%;
+       @media only screen and (max-width: 992px) {
+        padding: 0 5% 0 5%;
+      }
+      @media only screen and (max-width: 768px) {
+        padding: 0 12% 0 12%;
+      }
+      @media only screen and (max-width: 576px) {
+        padding: 0 10% 0 10%;
+      }
+      @media only screen and (max-width: 476px) {
+        padding: 0 0% 0 0%;
+      }
+     /*  @media only screen and (max-width: 992px) {
+        padding: 0 5% 0 5%;
+      } */
+     /*   @media only screen and (max-width: 768px) {
+        width: 500px;
+        
+      }
+      
+    @media only screen and (max-width: 576px) {
+      width: 400px;
+     
+    } */
+   
+      
+     .count-days-top{
+        /*  height: 150px;
+         @media only screen and (max-width: 576px) {
+          height: 110px;
+          
+         } */
+        
+         .count-days-top-cont{
+             position: relative;
+             width: 130px;
+             height: 60px;
+             background: $cBoxDarkPurple;
+             top: -4px;
+            @media only screen and (max-width: 768px) {
+              width: 100px;
+              height: 40px;
+              top: -5;
+            }
+            
+            @media only screen and (max-width: 576px) {
+             width: 80px;
+     
+            }
+            @media only screen and (max-width: 476px) {
+              width: 70px;
+              height: 30px;
+            }
+             .leftBottom,.rightBottom{
+             position: absolute;
+             width: 12px;
+             height: 12px;
+             background: $cBoxBorderColor;
+             border-radius: 50%;
+             z-index: 5;
+             }
+             .leftBottom{
+                top: 55px;
+                left: -5px;
+                @media only screen and (max-width: 768px) {
+                 top: 35px;
+                }
+                @media only screen and (max-width: 476px) {
+                  top: 25px;
+                 }
+             }
+             .rightBottom{
+                top: 55px;
+                right: -5px;
+                @media only screen and (max-width: 768px) {
+                  top: 35px;
+                 }
+                 @media only screen and (max-width: 476px) {
+                  top: 25px;
+                 }
+             }
+             hr{
+                 position: absolute;
+             
+                width: 100%;
+                border: 0.8px solid #1a1c29;
+                /* color: $cBoxBorderColor; */
+                z-index: 12;
+                top: 75%;
+                @media only screen and (max-width: 768px) {
+                  top: 60%;
+                 }
+                 @media only screen and (max-width: 476px) {
+                  top: 50%;
+                 }
+             }
+         }
+         h3{
+             position: absolute;
+             z-index: 10;
+             background: linear-gradient($cBoxTextDarkColor, $cBoxTextLightColor);
+            -webkit-text-fill-color: transparent;
+        
+            -webkit-background-clip: text;
+            @media only screen and (max-width: 476px) {
+            
+            font-size: $font-size-sm;
+            }
+            
+           
+         }
+         .count-days-bottom-cont{
+         
+            position: relative;
+            top: -1.8px;
+            width: 130px;
+            height: 60px;
+            background: $cBoxLightPurple;
+            
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            @media only screen and (max-width: 768px) {
+              width: 100px;
+              height: 40px;
+            }
+            @media only screen and (max-width: 576px) {
+              width: 80px;
+      
+             }
+             @media only screen and (max-width: 476px) {
+              width: 70px;
+              height: 30px;
+            }
+        }
+        .count-days-bottom-cont::after{
+          content: "";
+           position: relative;
+           top: 60%;
+           padding: 10px 65px 10px 65px;
+           background: #181b22;
+           border-bottom-left-radius: 10px;
+           border-bottom-right-radius: 10px;
+           z-index: -1;
+           @media only screen and (max-width: 768px) {
+            padding: 10px 50px 10px 50px;
+            top: 40%;
+          } 
+          @media only screen and (max-width: 576px) {
+            padding: 10px 40px 10px 40px;
+
+           }
+           @media only screen and (max-width: 476px) {
+            padding: 10px 35px 10px 35px;
+            top: 10%;
+           }
+        }
+     }
+   }
+  .text-container{
+    padding: 0 20% 0 20%;
+    @media only screen and (max-width: 992px) {
+      padding: 0 5% 0 5%;
+    }
+    @media only screen and (max-width: 768px) {
+      padding: 0 12% 0 12%;
+    }
+    @media only screen and (max-width: 576px) {
+      padding: 0 10% 0 10%;
+    }
+    @media only screen and (max-width: 476px) {
+      padding: 0 0% 0 0%;
+    }
+   
+    .count-days-txt{
+      width: 130px; 
+      @media only screen and (max-width: 576px) {
+        width: 100px;
+       
+      }
+      p{
+        color: $textContainerTxt;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.3rem;
+        @media only screen and (max-width: 576px) {
+          /* letter-spacing: 0.1rem; */
+          font-size: 7px;
+         
+        }
+      }
+
+    }
+  }
+  .icon-container{
+    width: 150px;
+     margin-top: 14%;
+     @media only screen and (max-width: 768px) {
+      margin-top: 25%;
+    }
+    @media only screen and (max-width: 576px) {
+      margin-top: 35%;
+     }
+     @media only screen and (max-width: 476px) {
+      margin-top: 45%;
+     }
+     @media only screen and (max-width: 400px) {
+      margin-top: 55%;
+     }
+    .count-days-icon{
+      i{
+        
+        color: $textContainerTxt;
+        
+      }
+      i:hover{
+        color: $cBoxTextLightColor;
+      }
+      
+    }
+  }
+  
+}
+}
