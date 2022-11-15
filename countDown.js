@@ -1,5 +1,5 @@
 let countTime=setInterval(function(){
-    let enddate=new Date("Nov 18, 2022 12:00:00").getTime();
+    let enddate=new Date("November 18, 2022 12:00:00").getTime();
     var now=new Date().getTime();
     var real=enddate-now;
     
